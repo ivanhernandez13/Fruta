@@ -1,0 +1,13 @@
+{
+  "configDefaults" : {
+    "optionSet" : {
+
+    }
+  },
+  "packages" : [
+    "iOS",
+    "macOS"
+  ],
+  "projectName" : "Fruta",
+  "workspaceRoot" : ".."
+}

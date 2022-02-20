@@ -1,0 +1,66 @@
+{
+  "folders": [
+    {
+      "path": "."
+    }
+  ],
+  "settings": {
+    "files.exclude": {
+      "LICENSE": true,
+      "*.xcodeproj": true,
+      "*.tulsiproj": true,
+      "Configuration": true,
+      ".gitignore": true,
+      "bazel-[^o]*": true, // exclude bazel-[o]ut from exclusions
+      "bazel-out/[^a]*": true // exclude bazel-out/[a]pplebin_* from exclusions
+    }
+  },
+  "tasks": {
+    "version": "2.0.0",
+    "tasks": [
+      {
+        "label": "build: Fruta [iOS] (Debug)",
+        "type": "process",
+        "command": "bazel",
+        "args": ["build", "iOS:Fruta", "-c", "dbg"],
+        "group": {
+          "kind": "build",
+          "isDefault": true
+        },
+        "problemMatcher": []
+      },
+      {
+        "label": "build: Fruta Widget [iOS] (Debug)",
+        "type": "process",
+        "command": "bazel",
+        "args": ["build", "iOS:FrutaWidget", "-c", "dbg"],
+        "group": "build",
+        "problemMatcher": []
+      },
+      {
+        "label": "build: Fruta App Clip [iOS] (Debug)",
+        "type": "process",
+        "command": "bazel",
+        "args": ["build", "iOS:FrutaAppClip", "-c", "dbg"],
+        "group": "build",
+        "problemMatcher": []
+      },
+      {
+        "label": "build: Fruta App [macOS] (Debug)",
+        "type": "process",
+        "command": "bazel",
+        "args": ["build", "macOS:Fruta", "-c", "dbg"],
+        "group": "build",
+        "problemMatcher": []
+      },
+      {
+        "label": "build: Fruta Widget [macOS] (Debug)",
+        "type": "process",
+        "command": "bazel",
+        "args": ["build", "macOS:FrutaWidget", "-c", "dbg"],
+        "group": "build",
+        "problemMatcher": []
+      }
+    ]
+  }
+}

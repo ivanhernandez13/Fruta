@@ -1,0 +1,73 @@
+{
+  "additionalFilePaths" : [
+    "macOS/BUILD",
+    "iOS/BUILD"
+  ],
+  "buildTargets" : [
+    "//iOS:Fruta",
+    "//iOS:FrutaWidget",
+    "//iOS:FrutaAppClip",
+    "//macOS:Fruta",
+    "//macOS:FrutaWidget"
+  ],
+  "optionSet" : {
+    "BazelBuildOptionsDebug" : {
+      "p" : "$(inherited)"
+    },
+    "BazelBuildOptionsRelease" : {
+      "p" : "$(inherited)"
+    },
+    "BazelBuildStartupOptionsDebug" : {
+      "p" : "$(inherited)"
+    },
+    "BazelBuildStartupOptionsRelease" : {
+      "p" : "$(inherited)"
+    },
+    "BuildActionPostActionScript" : {
+      "p" : "$(inherited)"
+    },
+    "BuildActionPreActionScript" : {
+      "p" : "$(inherited)"
+    },
+    "CommandlineArguments" : {
+      "p" : "$(inherited)"
+    },
+    "EnvironmentVariables" : {
+      "p" : "$(inherited)"
+    },
+    "LaunchActionPostActionScript" : {
+      "p" : "$(inherited)"
+    },
+    "LaunchActionPreActionScript" : {
+      "p" : "$(inherited)"
+    },
+    "ProjectGenerationBazelStartupOptions" : {
+      "p" : "$(inherited)"
+    },
+    "TestActionPostActionScript" : {
+      "p" : "$(inherited)"
+    },
+    "TestActionPreActionScript" : {
+      "p" : "$(inherited)"
+    }
+  },
+  "projectName" : "Fruta",
+  "sourceFilters" : [
+    "Shared/...",
+    "Shared/Components",
+    "Shared/Ingredients",
+    "Shared/Model",
+    "Shared/Navigation",
+    "Shared/NutritionFacts",
+    "Shared/Orders",
+    "Shared/Recipe",
+    "Shared/Resources",
+    "Shared/Resources/en.lproj",
+    "Shared/Resources/ru.lproj",
+    "Shared/Smoothie",
+    "Shared/Styles",
+    "Widgets/...",
+    "iOS/...",
+    "macOS/..."
+  ]
+}
